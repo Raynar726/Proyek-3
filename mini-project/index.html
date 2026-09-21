@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="container">
+      <p>Materi Persiapan JLPT</p>
+      <button id="btn-menu" aria-expanded="false">☰</button>
+    </header>
+    <nav class="container">
+      <button id="btn-tema">Ganti Tema</button>
+      <a href="#hero" class="btn">Hero</a>
+      <a href="#materi" class="btn">Materi</a>
+      <a href="#daftar" class="btn">Daftar</a>
+    </nav>
+    <main class="container">
+      <section id="hero">
+        <h1>Materi Persiapan Ujian JLPT</h1>
+        <img src="assets/jepun.jpg" alt="Ilustrasi belajar bahasa Jepang" />
+        <p>
+          Persiapkan diri Anda menghadapi ujian kemampuan bahasa Jepang dengan
+          strategi belajar yang efektif dan terstruktur.
+        </p>
+        <a href="#materi" class="btn">Mulai Belajar</a>
+      </section>
+
+      <section id="materi">
+        <h2>Materi yang Dipelajari</h2>
+        <div id="filter-container">
+          <button class="btn-filter" data-kategori="semua">Semua</button>
+          <button class="btn-filter" data-kategori="huruf">Huruf Jepang</button>
+          <button class="btn-filter" data-kategori="tatabahasa">
+            Tata Bahasa
+          </button>
+          <button class="btn-filter" data-kategori="ginou">
+            Keterampilan Bahasa (Ginou)
+          </button>
+        </div>
+        <article id="materi-list" class="materi-container"></article>
+      </section>
+
+      <section id="daftar">
+        <h2>Kenapa Harus Belajar dengan Materi ini?</h2>
+        <ul>
+          <li>
+            Materi lengkap dan terstruktur sesuai standar ujian JLPT terbaru.
+          </li>
+          <li>
+            Pembahasan soal dan rumus tata bahasa yang mudah dipahami pemula.
+          </li>
+          <li>Dilengkapi tips manajemen waktu saat ujian berlangsung.</li>
+        </ul>
+      </section>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Apakah materi ini cocok untuk pemula?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sangat cocok! Materi dirancang dari nol, mulai dari pengenalan
+              huruf Hiragana dan Katakana dasar.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Apakah ada latihan soal atau tryout?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Ada. Setiap materi dilengkapi dengan latihan soal mandiri, serta
+              simulasi tryout yang formatnya disesuaikan dengan ujian JLPT asli.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Bagaimana cara mengakses materi ini?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Semua materi bisa diakses secara online kapan saja melalui modul
+              web ini setelah Anda melakukan pendaftaran akun.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <form id="form-kontak">
+          <label
+            >Nama:
+            <input type="text" id="nama" />
+          </label>
+          <label
+            >Email:
+            <input type="email" id="email" autocomplete="email" />
+          </label>
+          <textarea id="textarea"></textarea>
+          <button type="submit">Submit</button>
+          <div id="pesan-notif"></div>
+        </form>
+      </section>
+    </main>
+    <button id="btn-up">⬆️ Ke Atas</button>
+    <footer class="container">
+      <p>&copy; Rasya Ikram 2026</p>
+    </footer>
+  </body>
+</html>

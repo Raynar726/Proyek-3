@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+a:focus {
+    outline: 3px solid #ff4d4d;
+    outline-offset: 3px;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+.materi-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1e1aff56;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 250px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgb(73, 24, 187);
+    color: white;
+    padding: 7px 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff
+}
+#btn-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 5px;
+    background-color: rgb(243, 236, 255);
+    display: none;
+    cursor: pointer;
+}
+.faq-question {
+    cursor: pointer;
+    text-align: left;
+    background-color: #f0a8a894;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 3px;
+}
+.faq-answer {
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.faq-answer.show {
+    max-height: 300px;
+    border: 1px solid #1a1a1a;
+    padding: 5px;
+    border-radius: 8px;
+}
+#btn-tema {
+  background-color: #6366f1;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-tema:hover {
+  background-color: #453ec5;
+}
+@media (max-width: 768px) {
+
+    #btn-menu {
+        display: block;
+        background-color:#a9abfd ;
+        font-size: medium;
+    }
+
+    nav {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav.nav-active {
+        display: flex;
+    }
+}
+
+#id {
+    margin-bottom: 20px;
+}
+.btn-filter {
+    padding: 5px 10px;
+    font-size: medium;
+    background-color: #9697fa;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#form-kontak {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#form-kontak label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+#form-kontak input,
+#form-kontak textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+#form-kontak textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#form-kontak button {
+    width: 100%;
+    padding: 14px;
+    background-color: #5b2de6;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form-kontak button:hover {
+    background-color: #431db4;
+}
+
+#pesan-notif {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
